@@ -19,7 +19,7 @@
     </div>
   </div>
 
-  <!--Products: slider section-->
+  <!--Products: slider second section-->
   <div class="container-fluid productback">
 <div class="row">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -83,8 +83,39 @@
 </div>
 </div><!--/.end-slider section-->
 
+<!--SÉ PARTE: Form Third Section-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset-4">
+      <h1 class="text-center">Hola Amigo</h1>
+    </div>
+  </div>
+</div><!--/.end-third section-->
+
+<!--ENCUÉNTRANOS: Map and dropdown box Fourth Section-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-6">
+
+    </div>
+      <div class="col-xs-6 flex">
+        <main>
+  <h1>Encuéntranos</h1>
+  <br>
+  <form>
+  <select onchange="set_country(this,country)" id="region">
+  <option value="" selected="selected">Elige una ciudad</option>
+  </select>
+  <select name="country" disabled="disabled" onchange="set_city_state(this,city_state)" ></select>
+  </form>
+</main>
+      </div>
+  </div>
+</div><!--/.end-fourth section-->
+
 
   <script src="js/jquery.min.js" charset="utf-8"></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="js/interact.js" charset="utf-8"></script>
 </body>
 </html>
