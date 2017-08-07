@@ -6,7 +6,7 @@
 font-family: 'Moon Flower';
 font-style: normal;
 font-weight: normal;
-src: local('Moon Flower'), url('../fonts/Moon Flower.woff') format('woff');
+src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
 }
 
 
