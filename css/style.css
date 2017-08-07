@@ -1,0 +1,46 @@
+* {
+  font-family: 'Verdana';
+}
+.productback{
+	background-color: #EE2737;
+}
+.bmore {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  color: #EE2737;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.bmore:hover {
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+}
+.bmore:active {
+  letter-spacing: 2px;
+}
+.bmore:after {
+  content: "Más";
+  font-size:1.4em;
+}
+
+.flex {
+  color: white;
+	height: 100vh;
+  display: flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: center;
+  display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+}
