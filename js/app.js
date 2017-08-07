@@ -128,10 +128,9 @@ function initMap() {
     console.log(state.log);
     const marker = new google.maps.Marker({
       position: {lat:state.lat, lng:state.log},
-      map: map
+      map: map,
     });
-
-    map.setZoom(18);
+    map.setZoom(14);
   }
 
   function error(err) {
