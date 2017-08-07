@@ -5,18 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>Un buho</title>
 </head>
 <body>
-  <div class="container-fluid warning">
+  <!--Portada -->
+  <header class="container-fluid port">
     <div class="row">
       <div class="col-xs-6 col-xs-offset-3">
-        <img src="" alt="Buho Luigi"/>
+        <div class="text-center relative">
+          <img src="assets/images/luigi.jpg" alt="Buho Luigi"/>
+          <div class="msj absolute">
+            <img src="assets/images/msj.jpg" alt="Hola">
+            <div class="js-msj">¡Hola!</div>
+          </div>
+        </div>
         <h1 class="text-center">Yo soy el Buho Luigi</h1>
       </div>
     </div>
-  </div>
+    <div class="container iconos">
+      <div class="row">
+        <div class="col-xs-4 text-center">
+          <a href="" role-link="productos" class="anchor-portada">
+            <img src="assets/images/cubo.jpg" alt="productos" width="50%">
+            <h4 class="text-center">Productos</h4>
+          </a>
+        </div>
+        <div class="col-xs-4 text-center">
+          <a href="" role-link="parte" class="anchor-portada">
+            <img src="assets/images/parte.jpg" alt="sé parte" width="50%">
+            <h4 class="text-center">Sé parte</h4>
+          </a>
+        </div>
+        <div class="col-xs-4 text-center">
+          <a href="" role-link="venta" class="anchor-portada">
+            <img src="assets/images/venta.jpg" alt="puntos de venta" width="50%">
+            <h4 class="text-center">Puntos de venta</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="productos">Productos</section>
+  <section id="parte">Sé Parte</section>
+  <section id="venta">Puntos de Venta</section>
+
+
   <script src="js/jquery.min.js" charset="utf-8"></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>
