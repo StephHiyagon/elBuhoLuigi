@@ -37,17 +37,28 @@ img{
   width:50%;
 }
 
-.anchor-portada h4{
-  text-decoration: none;
+.anchor-portada h3{
+  text-decoration:none;
   color:#CC6041;
 }
 
-.anchor-portada:hover h4{
-  color:blue;
+.anchor-portada:hover, .anchor-portada:link{
   text-decoration: none;
 }
 
-.anchor-portada:active h4{
+a.anchor-portada.n1:hover h3{
+  color:#EF2537;
+}
+
+a.anchor-portada.n2:hover h3{
+  color:#00AAB9;
+}
+
+a.anchor-portada.n3:hover h3{
+  color:#36B871;
+}
+
+.anchor-portada:hover h3{
   text-decoration:none;
 }
 
@@ -57,5 +68,21 @@ img{
 
 .mapa{
   padding-right: 0;
-  padding-left: 0; 
+  padding-left: 0;
+}
+
+.venta{
+  opacity:0;
+  -webkit-transition:opacity .6s;
+  -moz-transition:opacity .6s;
+  -o-transition:opacity .6s;
+  transition: opacity .6s;
+}
+
+.loaded {
+  opacity: 1;
+  -webkit-transition:opacity .6s;
+  -moz-transition:opacity .6s;
+  -o-transition:opacity .6s;
+  transition: opacity .6s;
 }

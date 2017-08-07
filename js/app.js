@@ -7,12 +7,14 @@ $('.iconos a').on("click", function(e) {
    e.preventDefault();
     console.log("desplaza");
     console.log(e.target);
-    // var height= $(".scroll").outerHeight(true);
-    // console.log(height);
     var target ='#'+ $(this).attr("role-link");
     console.log(target);
+    $('html,body').animate({scrollTop: $(target).offset().top},1200);
+    setTimeout(function(){
+      $(target).addClass('loaded');
+      console.log('agregar clase');
+    },2000);
 
-    $('html,body').animate({scrollTop: $(target).offset().top}, 1200);
     return false;
    });
 
