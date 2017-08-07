@@ -1,14 +1,23 @@
+@font-face {
+font-family: 'Moon Flower';
+font-style: normal;
+font-weight: normal;
+src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
+}
+
 *{
   padding: 0;
   margin:0;
   box-sizing: border-box;
-  font-family: 'Verdana', monospace;
+  font-family: 'Moon Flower';
 }
+
+
 
 .port{
   padding:40px;
   background-color:#F9DE09;
-  height: 100vh;
+  height: 100%;
   /*background-color:#FFD100; color solicitado*/
   color:#CC6041;
 }
@@ -33,18 +42,85 @@
   background-color: white;
 }
 
+.accordion-container {
+    width: 100%;
+    margin: 0 0 20px;
+    clear:both;
+}
+
+.accordion-titulo {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #CC6041;
+  color: #FFD100;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.accordion-titulo:hover {
+    text-decoration: none;
+    background: transparent;
+    border:1px solid #CC6041;
+    border-radius: 25px;
+    color:#CC6041;
+
+}
+
+
+.accordion-content {
+    display: none;
+    padding: 20px;
+    overflow: auto;
+}
+
+.accordion-content p{
+    margin:0;
+}
+
+
+
+@media (max-width: 767px) {
+    .accordion-content {
+        padding: 10px 0;
+    }
+}
+
 img{
   width:50%;
 }
 
-
-.anchor-portada:hover, .anchor-portada:link{
- text-decoration: none;
+.anchor-portada h2{
+  text-decoration:none;
+  color:#CC6041;
+  font-family: 'Moon Flower';
 }
 
-.anchor-portada:hover h4{
- text-decoration:none;
- color:#36B871 ;
+.anchor-portada:hover, .anchor-portada:link{
+  text-decoration: none;
+}
+
+a.anchor-portada.n1:hover h2{
+  color:#EF2537;
+}
+
+a.anchor-portada.n2:hover h2{
+  color:#00AAB9;
+}
+
+a.anchor-portada.n3:hover h2{
+  color:#36B871;
+}
+
+.anchor-portada:hover h2{
+  text-decoration:none;
 }
 
 #map{
@@ -56,6 +132,7 @@ img{
   padding-right: 0;
   padding-left: 0;
 }
+
 #venta {
   background-color: #38B770;
   height: 100vh;
@@ -79,4 +156,21 @@ img{
     background-color: #38B770;
     height: 100vh;
   }
+
+
+.venta{
+  opacity:0;
+  -webkit-transition:opacity .6s;
+  -moz-transition:opacity .6s;
+  -o-transition:opacity .6s;
+  transition: opacity .6s;
+}
+
+.loaded {
+  opacity: 1;
+  -webkit-transition:opacity .6s;
+  -moz-transition:opacity .6s;
+  -o-transition:opacity .6s;
+  transition: opacity .6s;
+
 }
