@@ -46,3 +46,16 @@ img{
   color:blue;
   text-decoration: none;
 }
+
+.anchor-portada:active h4{
+  text-decoration:none;
+}
+
+#map{
+  height:300px;
+}
+
+.mapa{
+  padding-right: 0;
+  padding-left: 0; 
+}

@@ -48,10 +48,18 @@
   </header>
   <section id="productos">Productos</section>
   <section id="parte">Sé Parte</section>
-  <section id="venta">Puntos de Venta</section>
-
+  <section id="venta">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-6 mapa">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="js/jquery.min.js" charset="utf-8"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2O0FTclPKjtSDYfiNkWPInx7mppOZmgs&callback=initMap" async defer></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
   <script src="js/app.js" charset="utf-8"></script>
 </body>
