@@ -84,10 +84,12 @@ src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
     margin:0;
 }
 
-
-
 img{
   width:50%;
+}
+
+a > img{
+  width:40%;
 }
 
 .anchor-portada h2{
@@ -129,7 +131,7 @@ a.anchor-portada.n3:hover h2{
 
 #venta {
   background-color: #38B770;
-  height: 100vh;
+  height: 100%;
 }
 
 .isearch{
