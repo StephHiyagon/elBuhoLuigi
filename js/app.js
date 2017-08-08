@@ -1,3 +1,5 @@
+$('.animBtn').hide();
+
 setTimeout(function(){
   $('.js-msj').text("¡Amigo!");
 },2000);
@@ -161,3 +163,30 @@ function initMap() {
 
   navigator.geolocation.getCurrentPosition(success, error);
 }
+
+//home
+
+$(window).scroll(function(e) {
+    const cursorY = $(window).scrollTop();
+    // console.log(cursorY);
+    if(cursorY>=720){
+      $('.animBtn').show();
+    }else{
+      $('.animBtn').hide();
+    }
+  });
+
+$('.animBtn').on('click', function(e){
+  e.preventDefault();
+  console.log('ir al home');
+  console.log(e.target);
+  var target ='#'+ $(this).attr("role-link");
+  console.log(target);
+  $('html,body').animate({scrollTop: $(target).offset().top},1200);
+  // setTimeout(function(){
+  //   $(target).addClass('loaded');
+  //   console.log('agregar clase');
+  // },2000);
+
+  return false;
+})

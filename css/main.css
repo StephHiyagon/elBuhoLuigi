@@ -66,11 +66,11 @@ src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
 }
 
 .accordion-titulo:hover {
-    text-decoration: none;
-    background: transparent;
-    border:1px solid #CC6041;
-    border-radius: 25px;
-    color:#CC6041;
+  text-decoration: none;
+  background: transparent;
+  border:1px solid #CC6041;
+  border-radius: 25px;
+  color:#CC6041;
 
 }
 
@@ -101,6 +101,7 @@ img{
   text-decoration:none;
   color:#CC6041;
   font-family: 'Moon Flower';
+  margin-top: 0;
 }
 
 .anchor-portada:hover, .anchor-portada:link{
@@ -146,6 +147,80 @@ a.anchor-portada.n3:hover h2{
   background-color: #CC6041;
   height: 20vh;
 }
+
+/*boton Home*/
+@import url(//fonts.googleapis.com/css?family=Oswald:300);
+html, body, .wrapper {
+  height: 100%;
+}
+
+
+
+.holder {
+  position: fixed;
+  top: 5%;
+  left:46%;
+  height: 300px;
+  width: 100%;
+  z-index: 1;
+}
+
+a.animBtn:link, a.animBtn:visited {
+  position: relative;
+  display: block;
+  font-family: 'Moon Flower';
+  font-size: 37px;
+  font-weight: bold;
+  width: 83px;
+  height: 83px;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: .08em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+a.animBtn:link:after, a.animBtn:visited:after {
+  content: "";
+  position: absolute;
+  background: none repeat scroll 0 0 #fff;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  z-index: -1;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+a.animBtn:link:hover, a.animBtn:visited:hover {
+  color: #333;
+  text-shadow: none;
+}
+a.animBtn:link:hover:after, a.animBtn:visited:hover:after {
+  height: 420%;
+}
+
+
+a.animBtn.themeB:after {
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+
 
 @media (max-width:780px){
   #map{
