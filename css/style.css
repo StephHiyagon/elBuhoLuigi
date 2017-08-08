@@ -64,6 +64,12 @@ font-weight: normal;
     align-content: center;
 }
 
+/**Section Sé parte*/
+.separte {
+    background-color: #10069F;
+    color: white;
+    height: 100vh;
+  }
 /**Section Encuentranos*/
 main {
   text-align: center;
@@ -84,4 +90,8 @@ select {
    border-radius: 3px;
    cursor:pointer;
    margin: 7px;
+}
+.iopacity {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }

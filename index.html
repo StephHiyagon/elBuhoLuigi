@@ -131,15 +131,58 @@
 </section>
 
 <!--SÉ PARTE: Form Third Section-->
-<section id="parte">Sé Parte
+<section id="parte">
 <!--Puntos de venta...mapa y filter-->
-<div class="container-fluid">
+<div class="container-fluid separte">
   <div class="row">
-    <div class="col-xs-4 col-xs-offset-4">
-      <h2 class="text-center">Hola Amigo</h2>
+
+  <div class="col-sm-6 flex">
+<h2 class="text-left" style="margin-left:20px;">Sé parte</h2>
+    <h4 class="text-left" style="margin-left:20px;">¡Déjame tus datos y sé parte!</h4>
+    <br>
+  <form class="form-horizontal" action="/action_page.php">
+
+    <div class="form-group">
+      <label class="control-label col-md-6" for="email">Nombres completos:</label>
+      <div class="col-md-6 iopacity">
+        <input type="email" class="form-control" id="email" placeholder="" name="email">
+      </div>
     </div>
+    <div class="form-group">
+      <label class="control-label col-md-6" for="email">Correo electrónico:</label>
+      <div class="col-md-6 iopacity">
+        <input type="email" class="form-control" id="email" placeholder="" name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-md-6" for="email">Distrito:</label>
+      <div class="col-md-6 iopacity">
+        <input type="email" class="form-control" id="email" placeholder="" name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-offset-2 col-md-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember">Profesor</label>
+          &nbsp;
+          <label><input type="checkbox" name="remember">Padre</label>
+        </div>
+
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-offset-2 col-md-10">
+        <button type="submit" class="btn btn-default">Sé parte</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div class="col-sm-6">
   </div>
-</div><!--/.end-third section-->
+</div>
+  </div><!--/.end-third section-->
 </section>
 
 <!--ENCUÉNTRANOS: Map and dropdown box Fourth Section-->
@@ -170,11 +213,12 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-6">
-        <h1>HOLA, SOY EL FOOTER</h1>
+        <h1 class="text-center">HOLA, SOY EL FOOTER</h1>
       </div>
   </div>
   </div>
 </footer>
+
   <script src="js/jquery.min.js" charset="utf-8"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2O0FTclPKjtSDYfiNkWPInx7mppOZmgs&callback=initMap" async defer></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>

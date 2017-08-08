@@ -158,7 +158,7 @@ a.anchor-portada.n3:hover h2{
   }
 
 
-.venta{
+#venta{
   opacity:0;
   -webkit-transition:opacity .6s;
   -moz-transition:opacity .6s;
@@ -172,5 +172,10 @@ a.anchor-portada.n3:hover h2{
   -moz-transition:opacity .6s;
   -o-transition:opacity .6s;
   transition: opacity .6s;
+
+}
+
+
+
 
 }
