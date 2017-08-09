@@ -168,8 +168,8 @@ function initMap() {
 
 $(window).scroll(function(e) {
     const cursorY = $(window).scrollTop();
-    // console.log(cursorY);
-    if(cursorY>=700){
+    console.log(cursorY);
+    if(cursorY>=630){
       $('.animBtn2').show();
     }else{
       $('.animBtn2').hide();
@@ -208,7 +208,8 @@ $('.animBtn').on('click', function(e){
     });
     $('.themeA').text('Video');
     $('.video').css({
-      'z-index':'0'
+      'z-index':'0',
+      'filter' :'blur(5px)'
     });
   }else{
     $(this).removeClass('buho');
@@ -220,7 +221,8 @@ $('.animBtn').on('click', function(e){
     });
     $('.themeA').text('Home');
     $('.video').css({
-      'z-index':'3'
+      'z-index':'3',
+      'filter':'initial'
     });
   }
   if($(this).attr('class')=='animBtn animBtn2 themeB'){
@@ -297,4 +299,66 @@ $(window).load(function(){
 
         scrollFooter(scroll, footerHeight);
     }
+});
+
+//controles de video
+
+var player;
+
+function onYouTubePlayerAPIReady() {
+  player = new YT.Player('video', {
+    events: {'onReady': onPlayerReady}
+  });
+}
+
+function onPlayerReady(event) {
+
+  var playButton = document.getElementById("play-button");
+  playButton.addEventListener("click", function() {
+    if (player.getPlayerState() == 1) {
+      playButton.innerHTML = "Play";
+      player.pauseVideo();
+
+    } else {
+      playButton.innerHTML = "Pause";
+      player.playVideo();
+
+    }
+
+  });
+
+  var muteButton = document.getElementById("mute-button");
+  muteButton.addEventListener("click", function() {
+    if (player.isMuted()) {
+      player.unMute();
+      muteButton.innerHTML = "Mute";
+    } else {
+      player.mute();
+      muteButton.innerHTML = "Unmute";
+    }
+  });
+
+  var moreButton = document.getElementById("more");
+  moreButton.addEventListener("click", function() {
+    console.log("more clicked");
+    playButton.innerHTML = "Play";
+    player.pauseVideo();
+  })
+}
+
+// Smooth scroll snippet from: https://css-tricks.com/snippets/jquery/smooth-scrolling/
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
