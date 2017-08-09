@@ -32,7 +32,7 @@ src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
 }
 
 .luigi{
-  background-color:#F9DE09;
+  background-color:rgba(0,0,0,0.3);
   position:absolute;
   top:0;
   left:0;
