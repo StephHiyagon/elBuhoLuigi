@@ -16,7 +16,7 @@ src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
 
 .port{
   padding:40px;
-  background-color:#F9DE09;
+  background-color:#FFFFFF;
   height: 100%;
   color:#CC6041;
 }
@@ -28,16 +28,17 @@ src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
   left:0;
   background-color: rgba(0,0,0,0.7);
   width:100%;
-  height:100vh;
+  height:100%;
 }
 
 .luigi{
-  background-color:#F9DE09;
+  background-color:#fff;
   position:absolute;
   top:0;
   left:0;
   width:100%;
   overflow:hidden;
+  height:100vh;
 }
 
 .relative{
@@ -108,7 +109,7 @@ img{
 }
 
 a > img{
-  width:40%;
+  width:30%;
 }
 
 .anchor-portada h2{
@@ -158,7 +159,7 @@ a.anchor-portada.n3:hover h2{
 }
 
 #fin {
-  background-color: #CC6041;
+  background-color: #FFFFFF;
   height: 20vh;
 }
 
@@ -174,10 +175,10 @@ a.anchor-portada.n3:hover h2{
 .holder {
   position: fixed;
   top: 5%;
-  left:46%;
-  height: 300px;
+  left:92%;
+  /*height: 300px;
   width: 100%;
-  z-index: 1;
+  z-index: 1;*/
 }
 
 a.animBtn:link, a.animBtn:visited {
@@ -284,6 +285,7 @@ header
   height: 100vh;
   /*background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;*/
   top: 0;
+  overflow: hidden;
   position: fixed;
   z-index: -1;
 }
