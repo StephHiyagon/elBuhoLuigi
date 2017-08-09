@@ -208,7 +208,8 @@ $('.animBtn').on('click', function(e){
     });
     $('.themeA').text('Video');
     $('.video').css({
-      'z-index':'0'
+      'z-index':'0',
+      'filter' :'blur(5px)'
     });
   }else{
     $(this).removeClass('buho');
@@ -220,7 +221,8 @@ $('.animBtn').on('click', function(e){
     });
     $('.themeA').text('Home');
     $('.video').css({
-      'z-index':'3'
+      'z-index':'3',
+      'filter':'initial'
     });
   }
   if($(this).attr('class')=='animBtn animBtn2 themeB'){

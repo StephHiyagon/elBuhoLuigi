@@ -181,6 +181,10 @@ select {
   max-width: 90vw;
   }*/
 
+.form-horizontal .control-label{
+  text-align: left !important;
+}
+
 .info {
   min-height: 100vh;
   width: 100%;
