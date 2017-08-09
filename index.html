@@ -15,12 +15,21 @@
   <div id="scroll-animate-main">
     <div class="wrapper-parallax">
        <header id="home" class="container-fluid port">
-         <div class="container-fluid video">
-           <div class="row">
-             <div class="col-xs-10 col-xs-offset-1 flex">
-               <iframe width="100%" height="650px" src="https://www.youtube.com/embed/gJ2hK5LpQ9I?rel=0&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-             </div>
+         <div class="container-fluid video">           
+           <div class="video-bg">
+              <div class="video-fg">
+                <iframe id="video" src="https://www.youtube.com/embed/gJ2hK5LpQ9I?enablejsapi=1&html5=1&rel=0&controls=0&showinfo=0&autoplay=1&loop=1" frameborder="0"></iframe>
+              </div>
            </div>
+
+          <div class="video-overlay">
+              <a href="#productos"><div class="more" id="more">
+              <i class="fa fa-angle-down" aria-hidden="true"></i></div></a>
+            <div class="controls">
+            <div id="play-button" class="button">Pause</div>
+            <div id="mute-button" class="button">Mute</div>
+            </div>
+          </div>
          </div>
          <div class="boton hidden-xs hidden-sm">
            <a href="#" class="animBtn themeA">Home</a>
@@ -239,6 +248,8 @@
   <script src="js/jquery.min.js" charset="utf-8"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2O0FTclPKjtSDYfiNkWPInx7mppOZmgs&callback=initMap" async defer></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="https://use.fontawesome.com/6203e1dd7a.js"></script>
+  <script src="https://www.youtube.com/player_api" charset="utf-8"></script>
   <script src="js/interact.js" charset="utf-8"></script>
   <script src="js/app.js" charset="utf-8"></script>
 
