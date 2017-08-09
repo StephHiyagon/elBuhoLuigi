@@ -3,22 +3,22 @@
 }
 
 @font-face {
-font-family: 'Moon Flower';
+font-family: 'Moon Flower Bold';
 font-style: normal;
 font-weight: normal;
-src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
+src: local('Moon Flower Bold'), url('../font/Moon Flower Bold.woff') format('woff');
 }
 
 
 h1 {
   font-size: 4em;
-  font-family: 'Moon Flower';
+  font-family: 'Moon Flower Bold';
 }
 h2 {
   font-size: 3em;
-  font-family: 'Moon Flower';
+  font-family: 'Moon Flower Bold';
 font-style: normal;
-font-weight: normal;
+font-weight: bold;
 }
 .productback{
 	background-color: #EE2737;
