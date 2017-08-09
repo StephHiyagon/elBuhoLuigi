@@ -1,4 +1,4 @@
-$('.animBtn').hide();
+$('.animBtn2').hide();
 
 setTimeout(function(){
   $('.js-msj').text("¡Amigo!");
@@ -169,19 +169,21 @@ function initMap() {
 $(window).scroll(function(e) {
     const cursorY = $(window).scrollTop();
     // console.log(cursorY);
-    if(cursorY>=720){
-      $('.animBtn').show();
+    if(cursorY>=700){
+      $('.animBtn2').show();
     }else{
-      $('.animBtn').hide();
+      $('.animBtn2').hide();
     }
   });
 
-$('.animBtn').on('click', function(e){
+//boton HOME
+$('.animBtn2').on('click', function(e){
   e.preventDefault();
   console.log('ir al home');
-  console.log(e.target);
+  // console.log(e.target);
   var target ='#'+ $(this).attr("role-link");
-  console.log(target);
+  // console.log(target);
+
   $('html,body').animate({scrollTop: $(target).offset().top},1200);
   // setTimeout(function(){
   //   $(target).addClass('loaded');
@@ -191,12 +193,58 @@ $('.animBtn').on('click', function(e){
   return false;
 })
 
+//boton muestra portada
+$('.animBtn').on('click', function(e){
+  e.preventDefault();
+  console.log('ir a portada Luigi');
+  // console.log(e.target);
+  if($(this).attr('class')=='animBtn themeA'){
+    $(this).addClass('buho');
+    $('.luigi').css({
+        'z-index' : '2'
+    });
+    $('.boton').css({
+        'z-index' : '10'
+    });
+    $('.themeA').text('Video');
+    $('.video').css({
+      'z-index':'0'
+    });
+  }else{
+    $(this).removeClass('buho');
+    $('.luigi').css({
+        'z-index' : '1'
+    });
+    $('.boton').css({
+        'z-index' : '3'
+    });
+    $('.themeA').text('Home');
+    $('.video').css({
+      'z-index':'3'
+    });
+  }
+  if($(this).attr('class')=='animBtn animBtn2 themeB'){
+    $(this).addClass('buho');
+    $('.luigi').css({
+        'z-index' : '2'
+    });
+    $('.boton').css({
+        'z-index' : '10'
+    });
+    $('.themeA').text('Video');
+    $('.video').css({
+      'z-index':'0'
+    });
+  }
+  return false;
+})
+
 
 //parallax
 function scrollFooter(scrollY, heightFooter)
 {
-    console.log(scrollY);
-    console.log(heightFooter);
+    // console.log(scrollY);
+    // console.log(heightFooter);
 
     if(scrollY >= heightFooter)
     {

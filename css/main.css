@@ -21,6 +21,25 @@ src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
   color:#CC6041;
 }
 
+.video{
+  position:absolute;
+  z-index:2;
+  top:0;
+  left:0;
+  background-color: rgba(0,0,0,0.7);
+  width:100%;
+  height:100vh;
+}
+
+.luigi{
+  background-color:#F9DE09;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  overflow:hidden;
+}
+
 .relative{
   position:relative;
 }
@@ -145,6 +164,13 @@ a.anchor-portada.n3:hover h2{
 
 /*boton Home*/
 
+.boton {
+  position:absolute;
+  top:10px;
+  left:10px;
+  z-index:4;
+}
+
 .holder {
   position: fixed;
   top: 5%;
@@ -201,6 +227,17 @@ a.animBtn:link:hover:after, a.animBtn:visited:hover:after {
   height: 420%;
 }
 
+a.themeA:link, a.themeB:link{
+  font-size: 34px;
+  padding: 16px 11px;
+}
+
+a.animBtn.themeA:after {
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
 
 a.animBtn.themeB:after {
   -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
