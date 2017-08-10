@@ -16,7 +16,7 @@ src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
 
 .port{
   padding:40px;
-  background-color:#FFFFFF;
+  background-color:#FF6038;
   height: 100%;
   color:#FF6038;
 }
@@ -33,7 +33,7 @@ src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
 }
 
 .luigi{
-  background-color:rgba(255, 255, 255, 0.52);
+  background-color:rgba(255, 96, 56, 0.52);
   position:absolute;
   top:0;
   left:0;
