@@ -23,6 +23,8 @@ font-weight: bold;
 .productback{
 	background-color: #EE2737;
 }
+
+/*botón de productos*/
 .bmore {
   outline: none;
   height: 40px;
@@ -48,6 +50,64 @@ font-weight: bold;
 }
 .bmore:after {
   content: "Más";
+  font-size:1.4em;
+}
+
+/*botón 1 de se parte*/
+.bseparte1 {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  color: #10069F;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.bseparte1:hover {
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+}
+.bseparte1:active {
+  letter-spacing: 2px;
+}
+.bseparte1:after {
+  content: "Sé parte";
+  font-size:1.4em;
+}
+
+/*botón 2 de se parte*/
+.bseparte2 {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  color: #10069F;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.bseparte2:hover {
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+}
+.bseparte2:active {
+  letter-spacing: 2px;
+}
+.bseparte2:after {
+  content: "Ya soy parte";
   font-size:1.4em;
 }
 

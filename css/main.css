@@ -18,7 +18,7 @@ src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
   padding:40px;
   background-color:#FFFFFF;
   height: 100%;
-  color:#CC6041;
+  color:#FF6038;
 }
 
 .video{
@@ -51,16 +51,15 @@ src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
   position:absolute;
   top:0;
   right:-9rem;
+  width: 40%;
 }
 
 .js-msj{
   position: absolute;
   top: 34px;
   right: 77px;
-  border-radius: 6px;
   font-size: 2.5rem;
   z-index: 1;
-  background-color: white;
 }
 
 .accordion-container {
@@ -75,8 +74,8 @@ src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
   text-align: center;
   width: 130px;
   border-radius: 40px;
-  background: #CC6041;
-  color: #FFD100;
+  background: #FF6038;
+  color: #fff;
   padding: 10px;
   letter-spacing: 1px;
   text-shadow: 0;
@@ -89,9 +88,9 @@ src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
 .accordion-titulo:hover {
   text-decoration: none;
   background: transparent;
-  border:1px solid #CC6041;
+  border:1px solid #FF6038;
   border-radius: 25px;
-  color:#CC6041;
+  color:#FF6038;
 
 }
 
@@ -106,8 +105,16 @@ src: local('Moon Flower'), url('../font/Moon Flower.woff') format('woff');
     margin:0;
 }
 
-img{
+.pic1{
   width:50%;
+}
+
+.picb{
+  width:50%;
+}
+
+.pic2{
+  width:10%;
 }
 
 a > img{
@@ -116,7 +123,7 @@ a > img{
 
 .anchor-portada h2{
   text-decoration:none;
-  color:#CC6041;
+  color:#FF6038;
   font-family: 'Moon Flower';
   margin-top: 0;
 }
@@ -152,7 +159,7 @@ a.anchor-portada.n3:hover h2{
 }
 
 #venta {
-  background-color: #38B770;
+  background-color: #FFD100;
   height: 100%;
 }
 
@@ -162,7 +169,7 @@ a.anchor-portada.n3:hover h2{
 
 #fin {
   background-color: #FFFFFF;
-  height: 20vh;
+  height: 100%;
 }
 
 /*boton Home*/
@@ -176,7 +183,7 @@ a.anchor-portada.n3:hover h2{
 
 .holder {
   position: fixed;
-  top: 5%;
+  top: 74%;
   left:92%;
   /*height: 300px;
   width: 100%;
@@ -294,7 +301,7 @@ header
 
 footer#fin{
   width: 100%;
-  height: 300px;
+  height: 200px;
   bottom: -300px;
   position: fixed;
   z-index: -1;

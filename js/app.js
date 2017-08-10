@@ -169,7 +169,7 @@ function initMap() {
 $(window).scroll(function(e) {
     const cursorY = $(window).scrollTop();
     console.log(cursorY);
-    if(cursorY>=630){
+    if(cursorY>=160){
       $('.animBtn2').show();
     }else{
       $('.animBtn2').hide();
