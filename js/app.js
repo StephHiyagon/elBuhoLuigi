@@ -1,8 +1,8 @@
 $('.animBtn2').hide();
 
-setTimeout(function(){
-  $('.js-msj').text("¡Amigo!");
-},2000);
+//setTimeout(function(){
+  //$('.js-msj').text("Cooool!");
+//},2000);
 
 //scroll
 $('.iconos a').on("click", function(e) {
