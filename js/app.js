@@ -201,19 +201,6 @@ $('.animBtn').on('click', function(e){
   if($(this).attr('class')=='animBtn themeA'){
     $(this).addClass('buho');
     $('.luigi').css({
-        'z-index' : '2'
-    });
-    $('.boton').css({
-        'z-index' : '10'
-    });
-    $('.themeA').text('Video');
-    $('.video').css({
-      'z-index':'0',
-      'filter' :'blur(5px)'
-    });
-  }else{
-    $(this).removeClass('buho');
-    $('.luigi').css({
         'z-index' : '1'
     });
     $('.boton').css({
@@ -224,6 +211,20 @@ $('.animBtn').on('click', function(e){
       'z-index':'3',
       'filter':'initial'
     });
+  }else{
+    $('.luigi').css({
+        'z-index' : '2'
+    });
+    $('.boton').css({
+        'z-index' : '10'
+    });
+    $('.themeA').text('Video');
+    $('.video').css({
+      'z-index':'0',
+      'filter' :'blur(5px)'
+    });
+    $(this).removeClass('buho');
+
   }
   if($(this).attr('class')=='animBtn animBtn2 themeB'){
     $(this).addClass('buho');
