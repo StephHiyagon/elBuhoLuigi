@@ -220,8 +220,8 @@ $('.animBtn').on('click', function(e){
     });
     $('.themeA').text('Video');
     $('.video').css({
-      'z-index':'0',
-      'filter' :'blur(5px)'
+      'z-index':'0'
+      // 'filter' :'blur(5px)'
     });
     $(this).removeClass('buho');
 
@@ -316,28 +316,32 @@ function onPlayerReady(event) {
 
   var playButton = document.getElementById("play-button");
   playButton.addEventListener("click", function() {
+    var modal= document.getElementById('myModal');
+    var barra=document.getElementsByClassName('barra')[0];
     if (player.getPlayerState() == 1) {
-      playButton.innerHTML = "Play";
+      // playButton.innerHTML = "Play";
       player.pauseVideo();
-
-    } else {
-      playButton.innerHTML = "Pause";
+      modal.style.display="block";
+      barra.style.display="none";
+    }
+    else {
+      // playButton.innerHTML = "Pause";
       player.playVideo();
 
     }
 
   });
 
-  var muteButton = document.getElementById("mute-button");
-  muteButton.addEventListener("click", function() {
-    if (player.isMuted()) {
-      player.unMute();
-      muteButton.innerHTML = "Mute";
-    } else {
-      player.mute();
-      muteButton.innerHTML = "Unmute";
-    }
-  });
+  // var muteButton = document.getElementById("mute-button");
+  // muteButton.addEventListener("click", function() {
+  //   if (player.isMuted()) {
+  //     player.unMute();
+  //     muteButton.innerHTML = "Mute";
+  //   } else {
+  //     player.mute();
+  //     muteButton.innerHTML = "Unmute";
+  //   }
+  // });
 
   var moreButton = document.getElementById("more");
   moreButton.addEventListener("click", function() {
@@ -347,6 +351,18 @@ function onPlayerReady(event) {
   })
 }
 
+var close=document.getElementById('close');
+
+close.addEventListener("click", function() {
+  console.log("cerrar");
+  var modal= document.getElementById('myModal');
+  var barra=document.getElementsByClassName('barra')[0];
+  modal.style.display="none";
+  barra.style.display="block";
+  var target ='#'+ $(this).attr("role-link");
+  console.log(target);
+  $('html,body').animate({scrollTop: $(target).offset().top},1200);
+});
 // Smooth scroll snippet from: https://css-tricks.com/snippets/jquery/smooth-scrolling/
 
 $(function() {
