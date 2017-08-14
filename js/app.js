@@ -1,5 +1,6 @@
 $('.animBtn2').hide();
 
+
 //setTimeout(function(){
   //$('.js-msj').text("Cooool!");
 //},2000);
@@ -313,22 +314,25 @@ function onYouTubePlayerAPIReady() {
 }
 
 function onPlayerReady(event) {
-
+  player.mute();
   var playButton = document.getElementById("play-button");
   playButton.addEventListener("click", function() {
     var modal= document.getElementById('myModal');
     var barra=document.getElementsByClassName('barra')[0];
+    var v = document.getElementsByTagName("video")[0];
     if (player.getPlayerState() == 1) {
       // playButton.innerHTML = "Play";
       player.pauseVideo();
+      // player.currentTime =0;
       modal.style.display="block";
       barra.style.display="none";
+      v.play();
     }
-    else {
-      // playButton.innerHTML = "Pause";
-      player.playVideo();
-
-    }
+    // else {
+    //   // playButton.innerHTML = "Pause";
+    //   player.playVideo();
+    //
+    // }
 
   });
 
@@ -342,6 +346,21 @@ function onPlayerReady(event) {
   //     muteButton.innerHTML = "Unmute";
   //   }
   // });
+  var close=document.getElementById('close');
+  close.addEventListener("click", function() {
+    console.log("cerrar");
+    var modal= document.getElementById('myModal');
+    var barra=document.getElementsByClassName('barra')[0];
+    var v = document.getElementsByTagName("video")[0];
+    modal.style.display="none";
+    barra.style.display="block";
+    v.pause();
+    v.currentTime =0;
+    player.playVideo();
+    var target ='#'+ $(this).attr("role-link");
+    console.log(target);
+    $('html,body').animate({scrollTop: $(target).offset().top},1200);
+  });
 
   var moreButton = document.getElementById("more");
   moreButton.addEventListener("click", function() {
@@ -351,18 +370,9 @@ function onPlayerReady(event) {
   })
 }
 
-var close=document.getElementById('close');
 
-close.addEventListener("click", function() {
-  console.log("cerrar");
-  var modal= document.getElementById('myModal');
-  var barra=document.getElementsByClassName('barra')[0];
-  modal.style.display="none";
-  barra.style.display="block";
-  var target ='#'+ $(this).attr("role-link");
-  console.log(target);
-  $('html,body').animate({scrollTop: $(target).offset().top},1200);
-});
+
+
 // Smooth scroll snippet from: https://css-tricks.com/snippets/jquery/smooth-scrolling/
 
 $(function() {
